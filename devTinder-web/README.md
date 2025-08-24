@@ -14,3 +14,8 @@
 - installed axios 
 - installed CORS in backend => added middleware with configuration => origin, methods, credentials
 - From frontend passed {withCredentials: true} to axios with every front api integration
+- Installed redux toolkit
+- Created a userSlice.jsx file
+- Created a appStore.jsx file
+- Created component folder and added Login.jsx, Profile.jsx and Feed.jsx
+- Resolved imports issues 

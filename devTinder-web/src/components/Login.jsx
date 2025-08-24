@@ -1,10 +1,15 @@
 import React, { useState } from "react";
-import icon from "../public/developer-icon.jpg";
+import icon from "../../public/developer-icon.jpg";
 import axios from "axios";
+import { useDispatch } from "react-redux";
+import { addUser } from "../utils/userSlice";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [emailId, setEmailId] = useState("zaheen@gmail.com");
   const [password, setPassword] = useState("Zaheen@2021");
+  const dispatch = useDispatch();  
+  const navigate = useNavigate();
 
   const handleLogin = async () => {
     try{
@@ -13,6 +18,8 @@ const Login = () => {
       password
     },
   { withCredentials: true });
+    dispatch(addUser(response.data));
+    navigate("/feed");
     }catch(error){
       console.log(error);
     }
