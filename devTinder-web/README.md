@@ -19,3 +19,7 @@
 - Created a appStore.jsx file
 - Created component folder and added Login.jsx, Profile.jsx and Feed.jsx
 - Resolved imports issues 
+- Add redux devTools in chrome
+- login and see if data is coming properly in the store
+- Navbar should update as soon as user loggedin 
+- Refactor our code to add constants file + create a component folder
